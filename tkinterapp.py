@@ -1,7 +1,7 @@
-import pandas
+# import pandas
 import matplotlib.pyplot as plt
 from createplot import mergingData
-from matplotlib.figure import Figure
+# from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationToolbar2Tk)
 from tkinter import *
 # from PIL import ImageTk, Image

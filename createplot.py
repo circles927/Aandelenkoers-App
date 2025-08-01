@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # source file is inside data folder and named "aex.csv"
 def readingData():
