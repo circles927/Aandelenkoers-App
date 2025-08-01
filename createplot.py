@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# source file is inside same folder and named "aex.csv"
+# source file is inside data folder and named "aex.csv"
 def readingData():
     df1_source = pd.read_csv(r"data/aex.csv")
     df2_source = pd.read_csv(r"data/nasdaq.csv")
