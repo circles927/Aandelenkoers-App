@@ -14,4 +14,6 @@ deactivate
 
 ---------------------------
 
+API Key - Alphavantage
 
+4M35HGZYSOR6J1X5
