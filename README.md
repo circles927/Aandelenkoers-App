@@ -13,3 +13,13 @@ Dus simuleren.
 En met een fictief saldo koop en verkoop orders uitvoeren.
 
 En genieten van het proces van het ontwikkelen.
+
+--
+
+Het is al een tijd geleden. Ik ben opnieuw op deze app terug gekomen. Hij deed niet veel, hij plotte een grafiek, en deed niet eens inkopen of verkopen met het fictieve saldo dat ik gegeven had.
+
+Ik heb een nieuwe bron, Alphavantage. Dit is een API en is beperkt in calls per dag. Maar dit is wel de weg voorwaarts (coderen middels API's).
+
+Als ik er extensiever gebruik van wil maken moet ik gaan betalen. Maar daarin ligt dus de uitdaging, om dat voor te zijn. En er slechts gratis gebruik van te maken.
+
+Succes.
