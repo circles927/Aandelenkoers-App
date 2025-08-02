@@ -16,8 +16,8 @@ def mergingData():
     dfList[1]['timestamp'] = pd.to_datetime(dfList[1]['timestamp'])
 
     # filter the dataframes to only include rows after a certain date
-    filtered_df1 = dfList[0].loc[(dfList[0]['timestamp'] >= '2025-01-20')]
-    filtered_df2 = dfList[1].loc[(dfList[1]['timestamp'] >= '2025-01-20')]
+    filtered_df1 = dfList[0].loc[(dfList[0]['timestamp'] >= '2025-01-15')]
+    filtered_df2 = dfList[1].loc[(dfList[1]['timestamp'] >= '2025-01-15')]
 
     # select only the timestamp and close columns from each dataframe
     df1_close = filtered_df1[['timestamp', 'close']].copy()
