@@ -16,6 +16,8 @@ def displayplot():
     # importing DataFrame
     df = modules.createplot.mergingData()
 
+    df = df.sort_values('timestamp').dropna(subset=['close_x', 'close_y'])
+
     topframe = Frame(window)
     topframe.pack(side="top")
 

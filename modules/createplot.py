@@ -14,8 +14,8 @@ def mergingData():
     dfList[0]['timestamp'] = pd.to_datetime(dfList[0]['timestamp'])
     dfList[1]['timestamp'] = pd.to_datetime(dfList[1]['timestamp'])
 
-    filtered_df1 = dfList[0][dfList[0]['timestamp'] >= '2025-01-15']
-    filtered_df2 = dfList[1][dfList[1]['timestamp'] >= '2025-01-15']
+    filtered_df1 = dfList[0].loc[(dfList[0]['timestamp'] >= '2025-01-20')]
+    filtered_df2 = dfList[1].loc[(dfList[1]['timestamp'] >= '2025-01-20')]
 
     df1_close = filtered_df1[['timestamp', 'close']]
     df2_close = filtered_df2[['timestamp', 'close']]
