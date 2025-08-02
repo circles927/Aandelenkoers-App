@@ -29,4 +29,7 @@ def mergingData():
     # merge the two dataframes on the timestamp column into one dataframe
     df_total = pd.merge(df1_close, df2_close, how='outer', on='timestamp')
 
+    # drop the NaN values and sort the DataFrame by timestamp
+    df_total = df_total.sort_values('timestamp').dropna(subset=['close_x', 'close_y'])
+
     return df_total
