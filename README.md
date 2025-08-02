@@ -1,25 +1,25 @@
 # Aandelenkoers-App
 
-Oké dus dit wordt een officieel project nu na een kleine conceptje te hebben gemaakt wat wel bevalt.
-Ik programmeer het in Python voorlopig. En ik ben erover aan het nadenken om er een webapp van te maken.
+Dit is een applicatie in python geschreven die een aandelenkoers app zou moeten voorstellen. Ik heb een begin gemaakt, en het is een leuk projectje.
 
-Echter zijn er nog wat stappen te maken voordat ik daar op over ga. Ik moet het programmaatje dat de grafiek genereert intergreren in Tkinter, waarmee ik de User Interface maak.
-Dan kan ik waarschijnlijk ook wat interactiever gaan werken met de data zelf. Een kleine feature die ik wil proberen te krijgen is zo'n bolletje wat op de grafiek meebeweegt, die aangeeft wat op die plek van de grafiek de waarde is. Die loopt mee met de x-as van de muis als ie erbij in de buurt is. Dus hij hoeft hem daarvoor niet aan te raken is het idee.
+De data komt van een site alphavantage. Die originele data was al wat verouderd dus ik heb hem opnieuw moeten schrijven om de nieuwe data te gebruiken. Dat gaat aardig. Hij plot een grafiekje, en ik heb in de user interface al een opzet gemaakt om een budget weer te geven waarmee je inkopen kunt doen om later weer te verkopen.
 
-En een idee voor op wat langere termijn is dat ie echt de historie kan simuleren en kan doorlopen op basis van de gedownloade data. En volgende stappen daarop zijn dan weer inderdaad echt strategiëen te gaan ontdekken die kunnen werken op de beursvloer. Nou goed. Ik kan daarvoor wat theorie gaan leren om het toe te kunnen passen. Maar ik wil hier ook weer niet heel erg ver in gaan.
+En zo te simuleren of je inkoop strategie succesvol is of niet.
 
-Dus simuleren.
+Er komt veel bij kijken natuurlijk, dit heb je niet zomaar 1, 2, 3 geschreven. Maar het is een van de eerste programmaatjes die mij interessant leek om te maken.
 
-En met een fictief saldo koop en verkoop orders uitvoeren.
+Tuurlijk, voordat het een commerciëel programma wordt moet je heel wat meer doen. Maar dat is de opzet ook niet. En ik heb daar zelfs even moeite mee gehad om dat eruit te filteren, omdat...
 
-En genieten van het proces van het ontwikkelen.
+Zo'n programma is veel te ambitieus. Maar een kleine goedkope rip-off zou kunnen haha. Het is maar even om de concepten erin onder te brengen. Te werken met data. En de user interface in python.
 
---
+Als je dat niet voor jezelf in het begin definieert dan neem je teveel hooi op je vork. En zo heb ik nog twee projectjes die mij interessant lijken. Een photoshop programma en een audio editing programma.
 
-Het is al een tijd geleden. Ik ben opnieuw op deze app terug gekomen. Hij deed niet veel, hij plotte een grafiek, en deed niet eens inkopen of verkopen met het fictieve saldo dat ik gegeven had.
+Maar uiteraard als je daar allemaal professionele programma's van wilt maken dan ben je daar je hele leven mee bezig. Maar het gaat bij mij om de lol. Kijken of ik het in het klein al kan. En dan verder bouwen.
 
-Ik heb een nieuwe bron, Alphavantage. Dit is een API en is beperkt in calls per dag. Maar dit is wel de weg voorwaarts (coderen middels API's).
+En ik heb er al aan zitten te denken of je het dan op een gegeven moment moet verkopen. Als je er echt in doorgeslagen bent. Aan een team van developers. Terwijl jij een begin hebt gemaakt.
 
-Als ik er extensiever gebruik van wil maken moet ik gaan betalen. Maar daarin ligt dus de uitdaging, om dat voor te zijn. En er slechts gratis gebruik van te maken.
+Het zal toch iéts waard zijn?? Maar dan hebben we het over veel later.
 
-Succes.
+Tot die tijd staat ie hier gewoon publiekelijk online. Als aanvulling van mijn portfolio (op mijn website) =).
+
+
