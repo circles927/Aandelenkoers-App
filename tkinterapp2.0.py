@@ -14,7 +14,7 @@ window.geometry("740x655")
 
 def displayplot():
     # importing DataFrame
-    df = modules.createplot.mergingData()
+    df = modules.createplot2.mergingData()
 
     topframe = Frame(window)
     topframe.pack(side="top")
