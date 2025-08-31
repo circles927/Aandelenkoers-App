@@ -6,20 +6,16 @@ De data komt van een site alphavantage. Die originele data was al wat verouderd 
 
 En zo te simuleren of je inkoop strategie succesvol is of niet.
 
-Er komt veel bij kijken natuurlijk, dit heb je niet zomaar 1, 2, 3 geschreven. Maar het is een van de eerste programmaatjes die mij interessant leek om te maken.
+Je kunt nu inmiddels in en verkopen doen, op basis van een bepaalde datum van de grafieken.
 
-Tuurlijk, voordat het een commerciëel programma wordt moet je heel wat meer doen. Maar dat is de opzet ook niet. En ik heb daar zelfs even moeite mee gehad om dat eruit te filteren, omdat...
+Je kan ook in de toekomst kopen en in het verleden verkopen, in principe. Dat werkt ook. Dat berekent ie ook gewoon. Dat zou eigenlijk niet mogelijk moeten zijn.
 
-Zo'n programma is veel te ambitieus. Maar een kleine goedkope rip-off zou kunnen haha. Het is maar even om de concepten erin onder te brengen. Te werken met data. En de user interface in python.
+Ik heb het even getest.
 
-Als je dat niet voor jezelf in het begin definieert dan neem je teveel hooi op je vork. En zo heb ik nog twee projectjes die mij interessant lijken. Een photoshop programma en een audio editing programma.
+En je kunt verlies of winst maken met je aan en verkopen.
 
-Maar uiteraard als je daar allemaal professionele programma's van wilt maken dan ben je daar je hele leven mee bezig. Maar het gaat bij mij om de lol. Kijken of ik het in het klein al kan. En dan verder bouwen.
+Ik ben er best trots op.
 
-En ik heb er al aan zitten te denken of je het dan op een gegeven moment moet verkopen. Als je er echt in doorgeslagen bent. Aan een team van developers. Terwijl jij een begin hebt gemaakt.
-
-Het zal toch iéts waard zijn?? Maar dan hebben we het over veel later.
-
-Tot die tijd staat ie hier gewoon publiekelijk online. Als aanvulling van mijn portfolio (op mijn website) =).
+Maar ik zal het nog wat uitgebreider gaan testen in de toekomst. Ik heb er nog niet grondig genoeg naar gekeken. Hij zou moeten doen wat ie hoort te doen. Maar zeker weten, voor alle gevallen hetzelfde, doe ik niet.
 
 
