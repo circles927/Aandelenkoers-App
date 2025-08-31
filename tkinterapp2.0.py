@@ -169,13 +169,13 @@ labelData.place(x=625, y=575)
 labelTotalAEX = Label(window, text=f"Total AEX: {totalAEX:.2f}", font=20)
 labelTotalAEX.place(x=600, y=635)
 
-labelUnitsAEX = Label(window, text=f"Units AEX: {unitsAEX:.2f}", font=20)
+labelUnitsAEX = Label(window, text=f"Units AEX: {unitsAEX}", font=20)
 labelUnitsAEX.place(x=800, y=635)
 
 labelTotalLON = Label(window, text=f"Total LON: {totalLON:.2f}", font=20)
 labelTotalLON.place(x=600, y=670)
 
-labelUnitsLON = Label(window, text=f"Units LON: {unitsLON:.2f}", font=20)
+labelUnitsLON = Label(window, text=f"Units LON: {unitsLON}", font=20)
 labelUnitsLON.place(x=800, y=670)
 # ---
 
