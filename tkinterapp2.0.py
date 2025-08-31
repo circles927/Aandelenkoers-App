@@ -11,7 +11,7 @@ from tkinter import *
 
 window = Tk()
 window.title("Plotting the plot!")
-window.geometry("1200x1000") 
+window.geometry("950x1000") 
 
 budget = 200000
 
@@ -124,64 +124,64 @@ emptylabel2 = Label(bottomframe, text="---", height=2)
 emptylabel2.pack(side="top")
 
 label1 = Label(window, text="select stock", font=28)
-label1.place(x=250, y=575)
+label1.place(x=140, y=575)
 
 stockselect = Spinbox(window, values=("AEX", "London_Exchange"), width=20)
-stockselect.place(x=250, y=605)
+stockselect.place(x=140, y=605)
 
 labeldate = Label(window, text="select date", font=28)
-labeldate.place(x=250, y=645)
+labeldate.place(x=140, y=645)
 
 dateSelectYear = Spinbox(window, from_=2005, to=2025, width=5)
-dateSelectYear.place(x=250, y=675)
+dateSelectYear.place(x=140, y=675)
 
 dateSelectMonth = Spinbox(window, from_=1, to=12, width=3)
-dateSelectMonth.place(x=300, y=675)
+dateSelectMonth.place(x=190, y=675)
 
 dateSelectDay = Spinbox(window, from_=1, to=31, width=3)
-dateSelectDay.place(x=340, y=675)
+dateSelectDay.place(x=230, y=675)
 
 selectionMadeButton = Button(window, text="select date", command=fetchdata)
-selectionMadeButton.place(x=380, y=675)
+selectionMadeButton.place(x=270, y=675)
 
 # ---
 
 labelbalance = Label(window, text=f"Budget: {budget:.2f}", font=38)
-labelbalance.place(x=250, y=725)
+labelbalance.place(x=120, y=725)
 
 buttonbuy1 = Button(window, text="buy order 1", width=15, command=lambda: calculateResults(+1))
-buttonbuy1.place(x=250, y=760)
+buttonbuy1.place(x=150, y=760)
 
 buttonsell1 = Button(window, text="sell order 1", width=15, command=lambda: calculateResults(-1))
-buttonsell1.place(x=375, y=760)
+buttonsell1.place(x=275, y=760)
 
 buttonbuy10 = Button(window, text="buy order 10", width=15, command=lambda: calculateResults(+10))
-buttonbuy10.place(x=250, y=795)
+buttonbuy10.place(x=150, y=795)
 
 buttonsell10 = Button(window, text="sell order 10", width=15, command=lambda: calculateResults(-10))
-buttonsell10.place(x=375, y=795)
+buttonsell10.place(x=285, y=795)
 
 buttonbuy200 = Button(window, text="buy order 200", width=15, command=lambda: calculateResults(+200))
-buttonbuy200.place(x=250, y=830)
+buttonbuy200.place(x=150, y=830)
 
 buttonsell200 = Button(window, text="sell order 200", width=15, command=lambda: calculateResults(-200))
-buttonsell200.place(x=375, y=830)
+buttonsell200.place(x=285, y=830)
 
 # create a persistent label to show fetched data (initially empty)
 labelData = Label(window, text=f"Current Pricing: {pricing:.2f}", font=20)
-labelData.place(x=625, y=575)
+labelData.place(x=525, y=575)
 
 labelTotalAEX = Label(window, text=f"Total AEX: {totalAEX:.2f}", font=20)
-labelTotalAEX.place(x=600, y=635)
+labelTotalAEX.place(x=500, y=635)
 
 labelUnitsAEX = Label(window, text=f"Units AEX: {unitsAEX}", font=20)
-labelUnitsAEX.place(x=800, y=635)
+labelUnitsAEX.place(x=700, y=635)
 
 labelTotalLON = Label(window, text=f"Total LON: {totalLON:.2f}", font=20)
-labelTotalLON.place(x=600, y=670)
+labelTotalLON.place(x=500, y=670)
 
 labelUnitsLON = Label(window, text=f"Units LON: {unitsLON}", font=20)
-labelUnitsLON.place(x=800, y=670)
+labelUnitsLON.place(x=700, y=670)
 # ---
 
 # Add button to screen
