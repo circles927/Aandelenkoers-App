@@ -75,10 +75,15 @@ def fetchdata():
 def updateNetWorth():
     global budget, totalAEX, totalLON, unitsAEX, unitsLON, pricing
     
-    totalAEX = unitsAEX * pricing
-    totalLON = unitsLON * pricing
-    labelTotalAEX.config(text=f"Total AEX: {totalAEX:.2f}")
-    labelTotalLON.config(text=f"Total LON: {totalLON:.2f}")
+    stockSelected = stockselect.get()
+    if stockSelected == "AEX":
+        totalAEX = unitsAEX * pricing
+        labelTotalAEX.config(text=f"Total AEX: {totalAEX:.2f}")
+    elif stockSelected == "London_Exchange":
+        totalLON = unitsLON * pricing
+        labelTotalLON.config(text=f"Total LON: {totalLON:.2f}")
+    else:
+        labelData.config(text="no stock selected")
 
 def calculateResults(order):
     global budget, totalAEX, totalLON, unitsAEX, unitsLON, pricing
