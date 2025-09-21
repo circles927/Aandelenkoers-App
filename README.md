@@ -18,4 +18,6 @@ Ik ben er best trots op.
 
 Maar ik zal het nog wat uitgebreider gaan testen in de toekomst. Ik heb er nog niet grondig genoeg naar gekeken. Hij zou moeten doen wat ie hoort te doen. Maar zeker weten, voor alle gevallen hetzelfde, doe ik niet.
 
+--
 
+Over gaan op Finnhub ipv AlphaVantage?
