@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 load_dotenv()  # take environment variables from .env.
 API_KEY_ALPHAV = os.getenv('API_KEY_ALPHAV')
 API_KEY_FINNHUB = os.getenv('API_KEY_FINNHUB')
+API_KEY_MARKETSTACK = os.getenv('API_KEY_MARKETSTACK')
 
 def fetch_alphavantage_data(symbol, market, outputsize='compact'):
     base_url = "https://www.alphavantage.co/query"
@@ -21,7 +22,7 @@ def fetch_alphavantage_data(symbol, market, outputsize='compact'):
     }
     response = requests.get(base_url, params=params, timeout=10)
     if response.status_code == 200:
-        with open(f"../data/raw/{symbol}_{market}.csv", "w") as f:
+        with open(f"data/raw/{symbol}_{market}.csv", "w") as f:
             f.write(response.text)
         return response.text  # CSV data as text
     else:
@@ -40,7 +41,18 @@ def fetch_finnhub_data(symbol, start="2005-01-01", end=None):
 
     response = requests.get(base_url, params=params, timeout=10)
     if response.status_code == 200:
-        with open(f"../data/raw/{symbol}_finnhub.json", "w") as f:
+        with open(f"data/raw/{symbol}_finnhub.json", "w") as f:
+            f.write(response.text)
+        return response.json()
+    else:
+        response.raise_for_status()
+
+def fetch_marketstack_data(symbol):
+    symbols = symbol
+    response = requests.get(f"https://api.marketstack.com/v1/eod?access_key={API_KEY_MARKETSTACK}&symbols={symbols}")
+
+    if response.status_code == 200:
+        with open(f"data/raw/{symbols}_marketstack.json", "w") as f:
             f.write(response.text)
         return response.json()
     else:
@@ -52,5 +64,9 @@ def _to_unix(date_str):
     return int(pd.to_datetime(date_str).tz_localize(timezone.utc).timestamp())
 
 if __name__ == "__main__":
-    print(f"AlphaVantage data: {fetch_alphavantage_data('TSCO.LON', 'LON')}")
-    print(f"Finnhub data: {fetch_finnhub_data('AAPL')}")
+    # print(f"AlphaVantage data: {fetch_alphavantage_data('TSCO.LON', 'LON')}")
+    # print(f"Finnhub data: {fetch_finnhub_data('AAPL')}")
+    
+    # printing similar valued companies for comparison
+    print(f"Marketstack data: {fetch_marketstack_data('ABN.AS')}")
+    print(f"Marketstack data: {fetch_marketstack_data('PHIA.AS')}")
