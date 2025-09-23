@@ -37,15 +37,15 @@ window.protocol("WM_DELETE_WINDOW", on_closing)
 
 def displayplot():
     # importing DataFrame
-    df = modules.createplot2.mergingData()
+    df = modules.selectData2.readData()
 
     topframe = Frame(window)
     topframe.pack(side="top")
 
     # creating plotconditions
     fig, ax = plt.subplots()
-    ax.plot(df['timestamp'], df['close_x'])
-    ax.plot(df['timestamp'], df['close_y'])
+    ax.plot(df['date'], df['close_x'])
+    ax.plot(df['date'], df['close_y'])
 
     # create element with which to display plot in Tkinter
     canvas = FigureCanvasTkAgg(fig, master=topframe)
